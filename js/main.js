@@ -16,6 +16,10 @@ function promoApply() {
         const totalValue = parseFloat(document.getElementById('total-cost').innerText);
         document.getElementById('footer-total').innerText = (totalValue - (totalValue * 0.2));
     }
+    else {
+        alert("Please Enter a Valid Promo Code");
+        promoCode.value = "";
+      }
     document.getElementById('apply-input').value = '';
 }
 
@@ -52,3 +56,5 @@ document.getElementById('deliveryFast').addEventListener('click', function () {
     document.getElementById('delivery-cost').innerText = 20;
     totalPrice();
 });
+
+
